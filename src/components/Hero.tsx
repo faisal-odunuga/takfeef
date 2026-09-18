@@ -60,7 +60,6 @@ export default function Hero() {
         fill
         priority
         className="object-cover object-center"
-        quality={90}
       />
 
       {/* Multi-layer dark overlay matching image.png style */}
