@@ -115,13 +115,15 @@ export default function Hero() {
         <div className="animate-rise-delay-2 flex flex-wrap gap-4 justify-center mb-16">
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold text-[#0c3b2e] transition-all hover:opacity-90 active:scale-[0.98]"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold text-[#034494] transition-all hover:opacity-90 active:scale-[0.98]"
             style={{ background: "#c79a44", fontSize: "1rem" }}
           >
             Book Your Slot
           </Link>
           <a
             href="https://wa.me/2349022552931"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold border-2 text-white transition-all hover:bg-white/10 active:scale-[0.98]"
             style={{ borderColor: "rgba(255,255,255,0.5)", fontSize: "1rem" }}
           >

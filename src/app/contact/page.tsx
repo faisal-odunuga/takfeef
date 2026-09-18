@@ -71,7 +71,7 @@ export default function ContactPage() {
             style={{
               fontFamily: 'var(--font-fraunces), serif',
               fontStyle: 'italic',
-              color: '#a3212b',
+              color: '#034593',
             }}
           >
             Get in touch
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   className='flex items-start gap-4 py-5'
                   style={{ borderBottom: '1px solid #dcd3bf' }}
                 >
-                  <span className='mt-0.5 shrink-0' style={{ color: '#a3212b' }}>
+                  <span className='mt-0.5 shrink-0' style={{ color: '#034593' }}>
                     {item.icon}
                   </span>
                   <div>
@@ -139,8 +139,10 @@ export default function ContactPage() {
 
             <a
               href='https://wa.me/2349022552931'
-              className='mt-5 flex items-center justify-center gap-2 w-full py-4 rounded-sm text-white font-semibold transition-all hover:opacity-90 active:scale-[0.98]'
-              style={{ background: '#a3212b' }}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-5 flex items-center justify-center gap-2 w-full py-4 rounded-sm text-white font-semibold transition-all hover:opacity-90 active:scale-[0.98] shadow-md'
+              style={{ background: '#25D366' }}
             >
               <svg width='18' height='18' viewBox='0 0 24 24' fill='none'>
                 <path
@@ -163,20 +165,20 @@ export default function ContactPage() {
               <div className='flex flex-col items-center justify-center h-full py-12 text-center'>
                 <div
                   className='w-16 h-16 rounded-full flex items-center justify-center mb-6'
-                  style={{ background: '#e8efe9' }}
+                  style={{ background: '#e8f0fa' }}
                 >
                   <svg width='28' height='28' viewBox='0 0 24 24' fill='none'>
                     <path
                       d='M5 13l4 4L19 7'
-                      stroke='#0c3b2e'
-                      strokeWidth='2'
+                      stroke='#25D366'
+                      strokeWidth='2.5'
                       strokeLinecap='round'
                     />
                   </svg>
                 </div>
                 <h3
                   className='text-[1.4rem] mb-3'
-                  style={{ fontFamily: 'var(--font-fraunces), serif', color: '#0c3b2e' }}
+                  style={{ fontFamily: 'var(--font-fraunces), serif', color: '#034494' }}
                 >
                   Message received!
                 </h3>
@@ -284,7 +286,7 @@ export default function ContactPage() {
                   type='submit'
                   id='contact-submit'
                   className='w-full py-4 rounded-sm text-white font-semibold text-[0.95rem] transition-all hover:opacity-90 active:scale-[0.98]'
-                  style={{ background: '#a3212b' }}
+                  style={{ background: '#034593' }}
                 >
                   Send message
                 </button>

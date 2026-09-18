@@ -38,21 +38,6 @@ export default function Navbar() {
       }}
     >
       <div className='max-w-[1180px] mx-auto px-7 flex items-center justify-between py-4'>
-        {/* Brand */}
-        {/* <Link href="/" className="flex items-center gap-3 group">
-          <BrandMark />
-          <div>
-            <div
-              className="text-[1.35rem] font-semibold leading-none"
-              style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
-            >
-              Takfeef
-            </div>
-            <div className="text-[0.7rem] tracking-wide" style={{ color: "#4c584f" }}>
-              Travels &amp; Tours
-            </div>
-          </div>
-        </Link> */}
         <Logo />
 
         {/* Desktop Nav */}
@@ -63,7 +48,7 @@ export default function Navbar() {
               href={link.href}
               className='text-[0.95rem] pb-1 border-b-2 transition-all duration-150'
               style={{
-                color: pathname === link.href ? '#0c3b2e' : '#16201b',
+                color: pathname === link.href ? '#034494' : '#16201b',
                 borderColor: pathname === link.href ? '#c79a44' : 'transparent',
                 fontWeight: pathname === link.href ? '600' : '400',
               }}
@@ -77,15 +62,17 @@ export default function Navbar() {
         <div className='hidden md:flex items-center gap-4'>
           <a
             href='https://wa.me/2349022552931'
+            target='_blank'
+            rel='noopener noreferrer'
             className='text-[0.88rem] font-semibold transition-colors duration-150 hover:opacity-80'
-            style={{ color: '#0c3b2e' }}
+            style={{ color: '#034494' }}
           >
             WhatsApp Us
           </a>
           <Link
             href='/contact'
             className='inline-flex items-center justify-center px-6 py-3 rounded-sm text-[0.92rem] font-semibold text-white transition-all duration-150 hover:opacity-90 active:scale-[0.98]'
-            style={{ background: '#a3212b' }}
+            style={{ background: '#034494' }}
           >
             Book Your Slot
           </Link>
@@ -100,21 +87,21 @@ export default function Navbar() {
           <span
             className='block w-6 h-0.5 transition-transform duration-200 origin-center'
             style={{
-              background: '#0c3b2e',
+              background: '#034494',
               transform: menuOpen ? 'rotate(45deg) translate(5px, 5px)' : 'none',
             }}
           />
           <span
             className='block w-6 h-0.5 transition-opacity duration-200'
             style={{
-              background: '#0c3b2e',
+              background: '#034494',
               opacity: menuOpen ? 0 : 1,
             }}
           />
           <span
             className='block w-6 h-0.5 transition-transform duration-200 origin-center'
             style={{
-              background: '#0c3b2e',
+              background: '#034494',
               transform: menuOpen ? 'rotate(-45deg) translate(5px, -5px)' : 'none',
             }}
           />
@@ -132,7 +119,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className='text-base font-medium'
-              style={{ color: pathname === link.href ? '#0c3b2e' : '#4c584f' }}
+              style={{ color: pathname === link.href ? '#034494' : '#4c584f' }}
             >
               {link.label}
             </Link>
@@ -140,15 +127,17 @@ export default function Navbar() {
           <div className='flex flex-col gap-3 pt-3 border-t' style={{ borderColor: '#dcd3bf' }}>
             <a
               href='https://wa.me/2349022552931'
+              target='_blank'
+              rel='noopener noreferrer'
               className='inline-flex items-center justify-center px-6 py-3 rounded-sm text-sm font-semibold border-2 transition-all'
-              style={{ borderColor: '#0c3b2e', color: '#0c3b2e' }}
+              style={{ borderColor: '#034494', color: '#034494' }}
             >
               WhatsApp Us
             </a>
             <Link
               href='/contact'
               className='inline-flex items-center justify-center px-6 py-3 rounded-sm text-sm font-semibold text-white'
-              style={{ background: '#a3212b' }}
+              style={{ background: '#034494' }}
             >
               Book Your Slot
             </Link>
@@ -159,24 +148,3 @@ export default function Navbar() {
   );
 }
 
-function BrandMark() {
-  return (
-    <svg width='40' height='40' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <circle cx='22' cy='22' r='21' stroke='#c79a44' strokeWidth='1.2' />
-      <path
-        d='M14 27L22 12L30 27'
-        stroke='#0c3b2e'
-        strokeWidth='2'
-        strokeLinejoin='round'
-        fill='none'
-      />
-      <path
-        d='M17.5 27L22 18L26.5 27'
-        stroke='#a3212b'
-        strokeWidth='2'
-        strokeLinejoin='round'
-        fill='none'
-      />
-    </svg>
-  );
-}

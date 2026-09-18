@@ -2,14 +2,14 @@ export default function QuoteBanner() {
   return (
     <section
       className="py-24 relative overflow-hidden"
-      style={{ background: "#0c3b2e" }}
+      style={{ background: "#034494" }}
     >
       {/* Radial gold glows */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 20% 30%, rgba(199,154,68,0.10), transparent 40%), radial-gradient(circle at 85% 75%, rgba(199,154,68,0.08), transparent 45%)",
+            "radial-gradient(circle at 20% 30%, rgba(199,154,68,0.15), transparent 40%), radial-gradient(circle at 85% 75%, rgba(199,154,68,0.12), transparent 45%)",
         }}
       />
 
@@ -32,7 +32,7 @@ export default function QuoteBanner() {
           >
             &quot;And complete the Hajj and Umrah for Allah.&quot;
           </p>
-          <p className="mt-4 text-[0.85rem]" style={{ color: "#9fb6a8" }}>
+          <p className="mt-4 text-[0.85rem]" style={{ color: "#d2e3fc" }}>
             Qur&apos;an, Surah Al-Baqarah 2:196
           </p>
         </div>
@@ -51,10 +51,10 @@ export default function QuoteBanner() {
           >
             اَلْعُمْرَةُ إِلَى الْعُمْرَةِ كَفَّارَةٌ لِمَا بَيْنَهُمَا
           </p>
-          <p className="text-[1rem]" style={{ color: "#e3ebe4" }}>
+          <p className="text-[1rem]" style={{ color: "#f0f6ff" }}>
             &quot;Umrah to Umrah is an expiation for what came between them.&quot;
           </p>
-          <p className="mt-3 text-[0.8rem]" style={{ color: "#9fb6a8" }}>
+          <p className="mt-3 text-[0.8rem]" style={{ color: "#d2e3fc" }}>
             Sahih al-Bukhari &amp; Sahih Muslim
           </p>
         </div>

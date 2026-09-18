@@ -65,13 +65,13 @@ export default function ServicesPage() {
         <div className="max-w-2xl mb-14">
           <span
             className="block text-[1rem] mb-2.5"
-            style={{ fontFamily: "var(--font-fraunces), serif", fontStyle: "italic", color: "#a3212b" }}
+            style={{ fontFamily: "var(--font-fraunces), serif", fontStyle: "italic", color: "#034593" }}
           >
             Packages
           </span>
           <h1
             className="text-[clamp(1.9rem,3vw,2.6rem)] leading-[1.15] mb-4"
-            style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+            style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
           >
             Every Takfeef package, laid out plainly
           </h1>
@@ -92,11 +92,11 @@ export default function ServicesPage() {
               {/* Left: price */}
               <div
                 className="p-9 flex flex-col justify-center border-b md:border-b-0 md:border-r"
-                style={{ background: "#e8efe9", borderColor: "#dcd3bf" }}
+                style={{ background: "#e8f0fa", borderColor: "#dcd3bf" }}
               >
                 <h2
                   className="text-[1.1rem] mb-3"
-                  style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+                  style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
                 >
                   {s.name}
                 </h2>
@@ -104,7 +104,7 @@ export default function ServicesPage() {
                   <div key={p.label} className="mb-3">
                     <div
                       className="text-[2rem] font-semibold leading-none"
-                      style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+                      style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
                     >
                       {p.amount}
                     </div>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                     className="mt-4 pt-4 text-[0.88rem] font-medium"
                     style={{
                       borderTop: "1px dashed #dcd3bf",
-                      color: "#a3212b",
+                      color: "#034494",
                     }}
                   >
                     {s.bonus}
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                 <Link
                   href="/contact"
                   className="inline-flex items-center justify-center mt-6 px-7 py-3 rounded-sm text-white text-[0.92rem] font-semibold transition-all hover:opacity-90 active:scale-[0.98]"
-                  style={{ background: "#a3212b" }}
+                  style={{ background: "#034494" }}
                 >
                   Book this package
                 </Link>
@@ -157,7 +157,7 @@ export default function ServicesPage() {
         {/* Included strip */}
         <div
           className="mt-10 rounded-[6px] p-9 flex flex-wrap gap-6 items-center justify-between"
-          style={{ background: "#0c3b2e" }}
+          style={{ background: "#034494" }}
         >
           <h3
             className="text-white text-[1.05rem] max-w-[200px]"

@@ -2,11 +2,13 @@ export default function WhatsAppFloat() {
   return (
     <a
       href="https://wa.me/2349022552931"
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95"
+      className="fixed right-6 bottom-6 z-50 w-14 h-14 rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95 shadow-lg"
       style={{
-        background: "#a3212b",
-        boxShadow: "0 6px 20px rgba(163,33,43,0.4)",
+        background: "#25D366",
+        boxShadow: "0 6px 20px rgba(37, 211, 102, 0.45)",
       }}
     >
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none">

@@ -2,11 +2,13 @@
 
 @layer base {
   :root {
-    --green-deep: #0c3b2e;
-    --green-mid: #155743;
-    --green-soft: #e8efe9;
-    --red: #a3212b;
-    --red-deep: #7c1620;
+    --green-deep: #034494;
+    --green-mid: #023370;
+    --green-soft: #e8f0fa;
+    --red: #034494;
+    --red-deep: #023370;
+    --blue-brand: #034494;
+    --blue-deep: #023370;
     --gold: #c79a44;
     --gold-soft: #e9d6a8;
     --cream: #faf6ee;

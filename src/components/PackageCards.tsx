@@ -70,14 +70,14 @@ export default function PackageCards() {
             style={{
               fontFamily: 'var(--font-fraunces), serif',
               fontStyle: 'italic',
-              color: '#a3212b',
+              color: '#034593',
             }}
           >
             This season&apos;s packages
           </span>
           <h2
             className='text-[clamp(1.7rem,2.6vw,2.3rem)] leading-[1.18] mb-3'
-            style={{ fontFamily: 'var(--font-fraunces), serif', color: '#0c3b2e' }}
+            style={{ fontFamily: 'var(--font-fraunces), serif', color: '#034494' }}
           >
             Three ways to travel with Takfeef
           </h2>
@@ -104,7 +104,7 @@ export default function PackageCards() {
               {pkg.popular && (
                 <span
                   className='absolute -top-3 left-6 text-[0.72rem] font-semibold text-white px-3 py-1 rounded-sm tracking-wide'
-                  style={{ background: '#a3212b' }}
+                  style={{ background: '#034494' }}
                 >
                   Most popular
                 </span>
@@ -114,7 +114,7 @@ export default function PackageCards() {
               <div className='p-7 pb-6'>
                 <h3
                   className='text-[1.2rem] mb-1.5'
-                  style={{ fontFamily: 'var(--font-fraunces), serif', color: '#0c3b2e' }}
+                  style={{ fontFamily: 'var(--font-fraunces), serif', color: '#034494' }}
                 >
                   {pkg.name}
                 </h3>
@@ -124,7 +124,7 @@ export default function PackageCards() {
                 <div className='mt-5 flex items-baseline gap-2'>
                   <span
                     className='text-[2rem] font-semibold'
-                    style={{ fontFamily: 'var(--font-fraunces), serif', color: '#0c3b2e' }}
+                    style={{ fontFamily: 'var(--font-fraunces), serif', color: '#034494' }}
                   >
                     {pkg.price}
                   </span>
@@ -146,7 +146,7 @@ export default function PackageCards() {
                       className='flex items-start gap-2.5 text-[0.9rem]'
                       style={{ color: '#4c584f' }}
                     >
-                      <span className='mt-0.5 shrink-0' style={{ color: '#a3212b' }}>
+                      <span className='mt-0.5 shrink-0' style={{ color: '#034494' }}>
                         <CheckIcon />
                       </span>
                       {f}
@@ -158,8 +158,8 @@ export default function PackageCards() {
                   className='mt-5 block w-full text-center py-3 rounded-sm text-[0.92rem] font-semibold transition-all hover:opacity-90 active:scale-[0.98]'
                   style={
                     pkg.popular
-                      ? { background: '#a3212b', color: '#fff' }
-                      : { border: '1.5px solid #0c3b2e', color: '#0c3b2e' }
+                      ? { background: '#034494', color: '#fff' }
+                      : { border: '1.5px solid #034494', color: '#034494' }
                   }
                 >
                   See full details
@@ -175,12 +175,12 @@ export default function PackageCards() {
           style={{ borderTop: '1px solid #dcd3bf', color: '#4c584f' }}
         >
           <span>
-            <span className='font-semibold' style={{ color: '#a3212b' }}>
+            <span className='font-semibold' style={{ color: '#034494' }}>
               Limited slots
             </span>{' '}
             remain for this season — early registration secures your gift package.
           </span>
-          <Link href='/services' className='font-semibold underline' style={{ color: '#0c3b2e' }}>
+          <Link href='/services' className='font-semibold underline' style={{ color: '#034494' }}>
             View every package →
           </Link>
         </div>

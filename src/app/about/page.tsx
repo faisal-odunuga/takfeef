@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us — Takfeef Travels & Tours",
@@ -37,13 +38,13 @@ export default function AboutPage() {
         <div className="max-w-2xl mb-14">
           <span
             className="block text-[1rem] mb-2.5"
-            style={{ fontFamily: "var(--font-fraunces), serif", fontStyle: "italic", color: "#a3212b" }}
+            style={{ fontFamily: "var(--font-fraunces), serif", fontStyle: "italic", color: "#034494" }}
           >
             About Takfeef
           </span>
           <h1
             className="text-[clamp(1.9rem,3vw,2.6rem)] leading-[1.15]"
-            style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+            style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
           >
             A local team, walking with you from Nigeria to the Haramain
           </h1>
@@ -59,7 +60,7 @@ export default function AboutPage() {
               style={{
                 background: "#fff",
                 border: "1px solid #dcd3bf",
-                borderLeft: "4px solid #a3212b",
+                borderLeft: "4px solid #034494",
               }}
             >
               <p
@@ -67,7 +68,7 @@ export default function AboutPage() {
                 style={{
                   fontFamily: "var(--font-fraunces), serif",
                   fontStyle: "italic",
-                  color: "#0c3b2e",
+                  color: "#034494",
                 }}
               >
                 &quot;At Takfeef Travels, your journey to the House of Allah is our priority. We
@@ -79,7 +80,7 @@ export default function AboutPage() {
             {/* What we do */}
             <h2
               className="text-[1.05rem] mb-4"
-              style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+              style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
             >
               What we do
             </h2>
@@ -101,7 +102,7 @@ export default function AboutPage() {
             {/* Where we are */}
             <h2
               className="text-[1.05rem] mb-4"
-              style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+              style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
             >
               Where you&apos;ll find us
             </h2>
@@ -126,7 +127,7 @@ export default function AboutPage() {
             {/* Trust grid */}
             <h2
               className="text-[1.05rem] mb-5"
-              style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+              style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
             >
               Trust &amp; credentials
             </h2>
@@ -139,7 +140,7 @@ export default function AboutPage() {
                 >
                   <strong
                     className="block mb-1.5 text-[0.95rem]"
-                    style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+                    style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
                   >
                     {t.strong}
                   </strong>
@@ -151,14 +152,14 @@ export default function AboutPage() {
             {/* The call to pilgrimage */}
             <h2
               className="text-[1.05rem] mb-5"
-              style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+              style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
             >
               The call to pilgrimage
             </h2>
-            <div className="rounded-[6px] p-7" style={{ background: "#e8efe9" }}>
+            <div className="rounded-[6px] p-7" style={{ background: "#e8f0fa" }}>
               <p
                 className="arabic text-[1.2rem] leading-[2.2] mb-4"
-                style={{ color: "#0c3b2e" }}
+                style={{ color: "#034494" }}
               >
                 وَأَذِّنْ فِي النَّاسِ بِالْحَجِّ يَأْتُوكَ رِجَالًا وَعَلَىٰ كُلِّ ضَامِرٍ يَأْتِينَ مِنْ كُلِّ فَجٍّ عَمِيقٍ
               </p>
@@ -167,7 +168,7 @@ export default function AboutPage() {
                 style={{
                   fontFamily: "var(--font-fraunces), serif",
                   fontStyle: "italic",
-                  color: "#0c3b2e",
+                  color: "#034494",
                 }}
               >
                 &quot;And proclaim to the people the Hajj; they will come to you on foot and on
@@ -176,6 +177,68 @@ export default function AboutPage() {
               <p className="text-[0.82rem]" style={{ color: "#4c584f" }}>
                 Qur&apos;an, Surah Al-Hajj 22:27
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Real Team & Pilgrims Visual Proof */}
+        <div className="mt-20 pt-14 border-t" style={{ borderColor: "#dcd3bf" }}>
+          <div className="max-w-2xl mb-10">
+            <span
+              className="block text-[1rem] mb-2"
+              style={{ fontFamily: "var(--font-fraunces), serif", fontStyle: "italic", color: "#034494" }}
+            >
+              On-Ground Presence
+            </span>
+            <h2
+              className="text-[clamp(1.6rem,2.4vw,2.1rem)] leading-tight mb-3"
+              style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
+            >
+              Our Team &amp; Pilgrims in Action
+            </h2>
+            <p className="text-[0.95rem] leading-relaxed" style={{ color: "#4c584f" }}>
+              We do not outsource your peace of mind. From the airport terminal in Nigeria to the courtyards of Makkah and Madinah, our official Takfeef guides are present on the ground to assist every pilgrim.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative h-80 rounded-[6px] overflow-hidden border" style={{ borderColor: "#dcd3bf" }}>
+              <Image
+                src="/images/august.jpg"
+                alt="Takfeef guides in uniform helping pilgrim family"
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#034494]/90 to-transparent text-white">
+                <span className="text-[0.72rem] tracking-wider uppercase font-semibold text-[#c79a44]">Dedicated Guides</span>
+                <p className="text-[0.88rem] font-medium">Takfeef Staff Accompanying Families</p>
+              </div>
+            </div>
+
+            <div className="relative h-80 rounded-[6px] overflow-hidden border" style={{ borderColor: "#dcd3bf" }}>
+              <Image
+                src="/images/semptember-3.jpg"
+                alt="Pilgrims at airport departure with Takfeef"
+                fill
+                className="object-cover object-center hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#034494]/90 to-transparent text-white">
+                <span className="text-[0.72rem] tracking-wider uppercase font-semibold text-[#c79a44]">Nigeria Departures</span>
+                <p className="text-[0.88rem] font-medium">Luggage &amp; Boarding Assistance</p>
+              </div>
+            </div>
+
+            <div className="relative h-80 rounded-[6px] overflow-hidden border" style={{ borderColor: "#dcd3bf" }}>
+              <Image
+                src="/images/septemberr.jpg"
+                alt="Pilgrims at the Prophet's Mosque in Madinah"
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[#034494]/90 to-transparent text-white">
+                <span className="text-[0.72rem] tracking-wider uppercase font-semibold text-[#c79a44]">Madinah Munawwarah</span>
+                <p className="text-[0.88rem] font-medium">Masjid an-Nabawi Guided Tours</p>
+              </div>
             </div>
           </div>
         </div>

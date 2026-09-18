@@ -6,7 +6,7 @@ const items = [
 
 const CheckIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-    <path d="M5 13l4 4L19 7" stroke="#a3212b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M5 13l4 4L19 7" stroke="#034593" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
@@ -22,7 +22,7 @@ export default function IntroStrip() {
           style={{
             fontFamily: "var(--font-fraunces), serif",
             fontStyle: "italic",
-            color: "#0c3b2e",
+            color: "#034494",
           }}
         >
           Your dream of answering the call to the House of Allah doesn&apos;t have to remain a dream.

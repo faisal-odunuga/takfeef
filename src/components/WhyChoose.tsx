@@ -61,14 +61,14 @@ export default function WhyChoose() {
             style={{
               fontFamily: "var(--font-fraunces), serif",
               fontStyle: "italic",
-              color: "#a3212b",
+              color: "#034494",
             }}
           >
             Why pilgrims choose Takfeef
           </span>
           <h2
             className="text-[clamp(1.7rem,2.6vw,2.3rem)] leading-[1.18]"
-            style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+            style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
           >
             Everything handled, so you can focus on worship
           </h2>
@@ -92,7 +92,7 @@ export default function WhyChoose() {
               </div>
               <h3
                 className="text-[1.05rem] mb-2.5"
-                style={{ fontFamily: "var(--font-fraunces), serif", color: "#0c3b2e" }}
+                style={{ fontFamily: "var(--font-fraunces), serif", color: "#034494" }}
               >
                 {f.title}
               </h3>
@@ -108,8 +108,8 @@ export default function WhyChoose() {
           {callouts.map((c, i) => (
             <div
               key={i}
-              className="flex items-start gap-5 p-8 rounded-sm"
-              style={{ background: "#0c3b2e", color: "#fff" }}
+              className="flex flex-col justify-center items-start gap-5 p-8 rounded-sm"
+              style={{ background: "#034494", color: "#fff" }}
             >
               <span className="shrink-0 mt-0.5" style={{ color: "#c79a44" }}>
                 {c.icon}
